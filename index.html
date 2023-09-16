@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Password Generator</title>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.css" integrity="sha512-KOWhIs2d8WrPgR4lTaFgxI35LLOp5PRki/DxQvb7mlP29YZ5iJ5v8tiLWF7JLk5nDBlgPP1gHzw96cZ77oD7zQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Mooli&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css" />
+        <link rel="stylesheet" href="css/main.css" />
+    </head>
+    <body>
+        <div class="painel">
+            <h1>Password Generator</h1>
+            <div class="passwordContainer">
+                <span id="password">&nbsp;</span>
+                <i class="fa-regular fa-copy"></i>
+            </div>
+            <div class="optionsContainer">
+                <div class="options-range">
+                    <label for="length">Character Length <span id="rangeValue">10</span></label>
+                    <input type="range" name="length" id="length" value="10" min="1" max="10" />
+                </div>
+                <div class="options-checkbox">
+                    <label><input type="checkbox" name="upper" id="upper" /> Uppercase Letters</label>
+                    <label><input type="checkbox" name="lower" id="lower" /> Lowercase Letters</label>
+                    <label><input type="checkbox" name="num" id="num" /> Numbers</label>
+                    <label><input type="checkbox" name="sym" id="sym" /> Symbols</label>
+                </div>
+                <button class="btn" id="generate">Generate <i class="fa-solid fa-arrow-rotate-right"></i></button>
+            </div>
+        </div>
+        <script src="javascript/main.js"></script>
+    </body>
+</html>
